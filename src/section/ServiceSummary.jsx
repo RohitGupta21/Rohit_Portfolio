@@ -35,32 +35,34 @@ const ServiceSummary = () => {
     });
   })
   return (
-    <section className="mt-20 overflow-x-hidden font-light leading-snug text-center mb-40 
-    contact-center-responsive">
-     <div id="title-service-1" className="font-normal">
-      <p className="font-normal text-2xl">Architecture</p>
-     </div>
-     <div id="title-service-2" className="flex items-center justify-center gap-3 ">
+    <section className="mt-16 mb-28 overflow-x-hidden font-light leading-snug text-center contact-center-responsive space-y-6">
+  {/* Service Row 1 */}
+  <div id="title-service-1" className="font-normal flex justify-center items-center">
+    <p className="text-2xl">Architecture</p>
+  </div>
 
-   
-     <p className="font-normal text-2xl">Development</p>
-     <div className="w-10 h-1 md:w-32 bg-yellow-500"/>
-     <p className="font-normal text-2xl">Deployment</p>
-       </div>
-       <div id="title-service-3" className="flex items-center justify-center gap-3 ">
-          <p className="font-normal text-2xl">
-            APIs
-          </p> <div className="w-5 h-1 md:w-32 bg-yellow-500"/>
-          <p className="italic font-normal text-2xl">Frontends</p>
-           <div className="w-10 h-1 md:w-32 bg-yellow-500"/>
-           <p className="font-normal text-2xl">Scalability</p>
-           
-       </div>
-       <div id="title-service-4">
-        
-       </div>
-       <p className="font-normal text-2xl ">Databases</p>
-    </section>
+  {/* Service Row 2 */}
+  <div id="title-service-2" className="flex items-center justify-center gap-3">
+    <p className="text-2xl">Development</p>
+    <div className="w-8 h-1 md:w-24 bg-yellow-500" />
+    <p className="text-2xl">Deployment</p>
+  </div>
+
+  {/* Service Row 3 */}
+  <div id="title-service-3" className="flex items-center justify-center gap-3 flex-wrap">
+    <p className="text-2xl">APIs</p>
+    <div className="w-6 h-1 md:w-20 bg-yellow-500" />
+    <p className="italic text-2xl">Frontends</p>
+    <div className="w-8 h-1 md:w-24 bg-yellow-500" />
+    <p className="text-2xl">Scalability</p>
+  </div>
+
+  {/* Service Row 4 */}
+  <div id="title-service-4">
+    <p className="text-2xl">Databases</p>
+  </div>
+</section>
+
   )
 } 
 
